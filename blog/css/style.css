@@ -1,0 +1,358 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+ }
+ 
+ *::selection{
+    background-color: var(--white);
+    color:var(--black);
+ }
+ 
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+ }
+ 
+ ::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+    border-radius: 5rem;
+ }
+ 
+ body{
+    background-color: var(--black);
+ }
+ 
+ section{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:2rem;
+ }
+ .heading{
+   margin-bottom: 2.5rem;
+   text-align: center;
+   font-size: 4rem;
+   color:var(--white);
+   text-transform: uppercase;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+   
+  }
+  
+ 
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    background-color:#212020;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+  }
+  .topnav input[type=text]:hover{
+    border: none;
+    border-bottom: 2px solid wheat;
+  }
+  .header{
+
+    position: fixed;
+    left:0; right:0;
+    z-index: 1000;
+    background-color: transparent;
+ }
+ 
+ .header .flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .header .flex .logo{
+    font-size: 2.5rem;
+    color:var(--white);
+ }
+ 
+ .header .flex .navbar a{
+    margin-left: 2rem;
+    color:rgb(74, 74, 74);
+    font-size: 2rem;
+ }
+ 
+ .header .flex .navbar a:hover{
+    color:var(--green);
+ }
+ 
+ #menu-btn{
+    cursor: pointer;
+    color:rgb(74, 74, 74);
+    font-size: 2.5rem;
+    display: none;
+ }
+ .bg{
+   background-image: url(../images/home.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-height: 100%;
+ }
+ .home{
+   margin-top: 6rem;
+
+}
+
+.home .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   gap:1.5rem;
+}
+
+.home .row .content{
+   flex:1 1 40rem;
+   text-align: center;
+}
+
+
+.home .row .content h3{
+   margin: 14rem;
+  padding: 2rem;
+   font-size: 5rem;
+   color:black;
+   background-color: white;
+   display: inline-block;
+   line-height: 1;
+}
+
+.home .row .content h3 span{
+   color:orange;
+}
+.leftcolumn {
+   float: left;
+   width: 30%;
+ }
+ 
+ /* Right column */
+ .rightcolumn {
+   float: right;
+   width: 50%;
+   padding-left: 20px;
+ }
+ 
+ /* Fake image */
+
+ .card {
+   background-color: rgb(101, 59, 59);
+   padding: 20px;
+   width: 100%;
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ .center {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .article-card {
+   width: 450px;
+   height: 320px;
+   border-radius: 12px;
+   margin: 20px;
+   overflow: hidden;
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   transition: all 300ms;
+ }
+ 
+ .article-card:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }
+ 
+ .article-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .article-card .content {
+   box-sizing: border-box;
+   width: 100%;
+   position: absolute;
+   padding: 30px 20px 20px 20px;
+   height: auto;
+   bottom: 0;
+   background-color: #5a595950;
+ }
+ 
+ .article-card .date,
+ .article-card .title {
+   margin: 0;
+ }
+ 
+ .article-card .date {
+   font-size: 20px;
+   color: rgba(255, 255, 255, 0.9);
+   margin-bottom: 4px;
+ }
+ .article-card .time {
+   font-size: 18px;
+   float: right;
+   color: rgba(255, 255, 255, 0.9);
+  
+ }
+ .article-card .title {
+   font-size: 30px;
+   color: #fff;
+ }
+ .post{
+   font-size: 1.5rem;
+   margin: 40px;
+   background-color: orange;
+   color: white;
+   padding: 1rem;
+   border-radius: 4px;
+ }
+ .box{
+   background-color: orange;
+   padding: 6rem;
+  
+ }
+ .box1{
+   background-color:rgb(101, 59, 59) ;
+  
+   height: 300px;
+   margin: 30px;
+ }
+ .box .box1 input[type=text]{
+   text-align: center;
+   border: #000000;
+   padding: 4px;
+   font-size: 2rem;
+   margin-top: 70px;
+   /* margin-left: 50px; */
+ }
+ .box .box1 h2{
+   color: orange;
+font-size: 3rem;
+ }
+ .box1 a{
+   font-size: 2rem;
+   padding: 3px;
+   text-align: center;
+   background-color: orange;
+   color: white;
+ }
+
+ .about .row{
+   
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   margin-top: 15rem;
+}
+
+.about .row .image{
+   flex:1 1 20rem;
+
+}
+
+.about .row .image img{
+   width: 100%;
+   border-radius: 50%;
+   margin-right: 20rem;
+   background-color: rgb(101, 59, 59);
+}
+
+.about .row .content{
+   text-align: center;
+   flex:1 1 40rem;
+}
+
+.about .row .content h3{
+   font-size: 3rem;
+   color:orange;
+}
+
+.about .row .content p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1.6rem;
+   color:black;
+}
+.about .row .content a{
+   color: white;
+   background-color: orange;
+   font-size: 2rem;
+   padding: 6px;
+}
+.row{
+   margin-top: 10rem;
+}
+
+
+ 
+ 
+ .footer{
+   background-color: transparent;
+   text-align: center;
+   /* padding-bottom: 7rem; */
+}
+
+.footer .share a{
+   margin:0 .3rem;
+   height: 4.5rem;
+   width: 4.5rem;
+   line-height: 4.5rem;
+   border-radius: 50%;
+   font-size: 2rem;
+   color:orange;
+  
+}
+
+.footer .share a:hover{
+   background-color: black;
+}
+
+.footer .credit{
+   margin-top: 2.5rem;
+   padding:1.5rem;
+   padding-top: 2.5rem;
+   border-top: .1rem solid black;
+   font-size: 2rem;
+   color:orange;
+}
+
+.footer .credit span{
+   color:black;
+}
