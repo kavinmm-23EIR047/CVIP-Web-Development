@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #fbff7a, #a477ff);
+}
+ 
+.container {
+    text-align: center;
+   
+}
+ 
+.weather-card {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 450px; 
+    background: linear-gradient(to right, #9b9f3d, #6843b3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(73, 7, 214, 0.1);
+    border: 1px solid rgba(53, 11, 192, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+ 
+.weather-card:hover {
+    transform: scale(1.05);
+}
+#weather img{
+    height: 100px;
+    width: 100px;
+}
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    /* border: 1px solid #ccc; */
+    border-radius: 30px;
+    font-size: 16px;
+
+
+    background: #d7d7d759;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+ 
+#city-input:focus {
+    outline: none;
+    border-color: #1b85db77;
+    color: white;
+}
+ 
+#city-input::placeholder {
+    color: #ffffff9d;
+    text-align: center;
+}
+ 
+#city-input-btn {
+    padding: 10px;
+    background-color: #d7d7d759;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+#city-input-btn:hover {
+    background-color: #5a5a5a59;
+    color: white;
+}
+ 
+#weather-info {
+    display: none;
+}
+ 
+ img {
+    width: 100px;
+    height: 100px;
+}
+ h3{
+    color: white;
+ }
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: white;
+}
+ 
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+ 
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 242, 0);
+}
+ 
+#date {
+    font-size: 14px;
+    color: rgb(255, 242, 0);
+}
